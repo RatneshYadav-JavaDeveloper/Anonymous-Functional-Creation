@@ -45,4 +45,32 @@
  
 	 	(a,b)-> a*b;
  
-8. whenever you want add the return statement, also must add the curly braces otherwise you will get error.	
+8. whenever you want add the return statement, also must add the curly braces otherwise you will get error.
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+            ************FUNCTIONAL INTERFACE************
+
+/**An Interface contains single abstract method is known as Functional Interface.**/
+
+	@FunctionalInterface
+	interface myInterface{
+	
+	abstract void m1();
+	
+	}
+	
+/** If you create more than one abstract method then, you will get an error**/
+
+	@FunctionalInterface
+	interface myInterface{
+	
+	abstract void m1();
+	abstract void m2();
+	
+	}
+	
+	Error: Invalid '@FunctionalInterface' annotation; myInterface is not a functional interface
+	
